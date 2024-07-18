@@ -1,0 +1,37 @@
+// #1 - Pyramid
+console.log("  #  ")
+console.log(" ### ")
+console.log("#####")
+
+// #2 - Initializing Variable
+let character;
+
+// #3 & #4 - Variable Assignment
+let character = "Hello";
+let character = 'Hello'; // Strings can be both single and double quote
+
+// #5 - Console Output
+let character = 'Hello';
+console.log(character);
+
+// #6 & 7 - Reassigning Variable & Reprint
+let character = 'Hello';
+console.log(character);
+character = 'World';
+console.log(character);
+
+// #8 & 9 & 10 - Variable Naming - Camel Case
+let secondCharacter; // this sort of initialization returns 'undefined'
+secondCharacter = 'assigned';
+console.log(secondCharacter); // fixing this sort of issue
+
+// 11 - Assigning Variables as Values
+secondCharacter = character;
+
+
+
+
+
+
+
+
