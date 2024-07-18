@@ -28,6 +28,44 @@ console.log(secondCharacter); // fixing this sort of issue
 // 11 - Assigning Variables as Values
 secondCharacter = character;
 
+// 12 - Review of All the Concepts so Far
+let profession = 'teacher';
+let age;
+console.log(profession);
+console.log(age);
+
+// 13 - Assigning a number as variable value 
+let count = 8; 
+
+// 14 - Mathematical Operations
+let count = 8;
+console.log(count + 1); // 9
+console.log(count * 2.0); // 16 (Not a float output)
+
+// 15 & 16 - Array Initializations
+let rows = []; // Empty Array
+let rows = ['Quincy', 'Adams']; // Array with Strings
+
+// 17 - Accessing Values Inside the Array 
+console.log(rows[0]);
+
+// 18 - Changing Values Inside the Array
+rows[1] = 10;
+console.log(rows); // ['Quincy', 10] Output
+
+// 22 - Accessing Last Index, Length Function
+rows[2] = rows[rows.length - 1];
+
+// 24 - Reviewing Array Concepts so Far
+let cities = ['London', 'New York', 'Mumbai'];
+console.log(cities);
+cities[cities.length - 1] = 'Mexico City';
+console.log(cities);
+
+
+
+
+
 
 
 
