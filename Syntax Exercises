@@ -83,7 +83,90 @@ for (let i = 0; i < count; i = i + 1) {
 console.log(i);
 }
 
-// 41 - 
+// 41 - Basics of for...of loop Structure
+for (const row of rows) {}
+for (const value of iterable) {}
+
+// 42 & 43 - String concatenation and new line character
+for (const row of rows) {
+result = result + row + "\n";
+}
+
+// 45 - Repeat Method
+for (let i = 0; i < count; i = i + 1) {
+  rows.push(character.repeat(i+1));
+}
+
+// 46 ~ 54 Functions in JavaScript
+function padRow(name) {
+return name // Note there is no () on return method
+}
+const call = padRow("string");
+console.log(call)
+
+// 55 Simple Function Writing Test
+function addTwoNumbers(val1, val2) {
+  return val1 + val2
+}
+let sum = addTwoNumbers(5, 10);
+console.log(sum);
+
+// 56 ~ 77 Variable Scope and Initial Pyramid Generator
+function padRow(rowNumber, rowCount) {
+  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// 78 - Comments
+/* Comment Block */
+
+// 79 -  If Statements - Introduction of truthy and falsy value
+if (condition) {body} // falsy values - "", 0, false, undefined, NaN
+
+// 88 - Equality Operators, === is strict, must be same value and type, !== is DNE
+
+// 98 - Working Pyramid Generator Function so Far
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+}
+
+// FOR LOOP VERSION
+/*
+for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}
+*/
+
+// WHILE LOOP VERSION
+/*
+while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}
+*/
+
+let result = ""
+
+for (const row of rows) {
+  result = result + "\n" + row;
+}
+
+console.log(result);
+
+// 99 ~ 105 - Inverted Pyramid Approach #1
+/*for (let i = count; i > 0; i -= 1) {
+  rows.push(padRow(i, count));
+}
+*/
+
+// 
+
+
+
+
+
 
 
 
